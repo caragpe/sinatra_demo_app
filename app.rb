@@ -17,5 +17,6 @@ get '/palindrome' do
 end
 
 post '/check' do
-  raise params.inspect
+  @phrase = params[:phrase]
+  erb :result
 end
