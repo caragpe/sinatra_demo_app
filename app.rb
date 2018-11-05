@@ -15,3 +15,7 @@ get '/palindrome' do
   @title = 'Palindrome'
   erb :palindrome
 end
+
+post '/check' do
+  raise params.inspect
+end
